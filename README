@@ -1,15 +1,1 @@
-# Week 1 — GitHub and Pages
-Create a repository named `web-development-experiments` under `krititayal`, add `index.html` and `style.css`, then try the workflow below. Push the feature branch, open a pull request on GitHub, review and merge it. Enable Pages in Settings → Pages from `main`. Save your published URL and a screenshot for the lab record.
-
-```bash
-git init
-git add .
-git commit -m "Add landing page"
-git branch -M main
-git remote add origin https://github.com/krititayal/web-development-experiments.git
-git push -u origin main
-git switch -c docs/landing-page
-# make a small edit, then:
-git add . && git commit -m "Update landing page"
-git push -u origin docs/landing-page
-```
+Experiment 1:Set up a GitHub repository for a project, create branches, merge changes, and use GitHub Pages for hosting a simple static site.
