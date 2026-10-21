@@ -1,46 +1,73 @@
-*{
-  box-sizing:border-box
+/* Basic styles for the first page. */
+body {
+  margin: 0;
+  background: #d9efff;
+  color: #242923;
+  font-family: Georgia, serif;
+  line-height: 1.6;
 }
-body{
-  margin:0;
-  background:#f5f2ec;
-  color:#242923;
-  font:17px/1.65 Georgia,serif
+
+main {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 24px;
+  background: #edf7ff;
+  border: 1px solid #d6e7f2;
+
+
 }
-main{
-  max-width:760px;
-  margin:12vh auto;
-  padding:48px 36px
+
+.eyebrow {
+  color: #68735d;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
 }
-.eyebrow{
-  font:600 13px Arial,sans-serif;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  color:#68735d
+
+h1 {
+  max-width: 600px;
+  font-size: 56px;
+  line-height: 1.1;
 }
-h1{
-  font-size:clamp(48px,9vw,82px);
-  line-height:.98;
-  letter-spacing:-.05em;
-  max-width:600px;
-  margin:22px 0
+
+.lead {
+  max-width: 520px;
+  color: #555e52;
+  font-size: 19px;
 }
-.lead{
-  max-width:550px;
-  font-size:20px;
-  color:#555e52
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 18px;
+  background: #344b3d;
+  color: white;
+  text-decoration: none;
+
 }
-.button{
-  display:inline-block;
-  margin-top:18px;
-  background:#344b3d;
-  color:white;
-  padding:12px 18px;
-  text-decoration:none;
-  border-radius:4px
+
+
+footer {
+  margin-top: 70px;
+  color: #697067;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
-footer{
-  margin-top:90px;
-  font:14px Arial,sans-serif;
-  color:#697067
+
+/* Make the heading fit on a phone. */
+@media (max-width: 500px) {
+  main {
+    margin: 40px auto;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
 }
+
+
+/* Simple shared finish: light blue pages, clear text and plain borders. */
+body { background: #d9efff; color: #263746; }
+main, .app, .shell, .article-body, aside, article, .post { background-color: #eaf6ff; }
+button, .button { background-color: #3676a5; color: #fff; }
+input, button { font: inherit; }
+button { cursor: pointer; }
